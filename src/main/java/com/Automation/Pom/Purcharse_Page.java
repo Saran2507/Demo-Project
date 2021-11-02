@@ -51,6 +51,9 @@ public class Purcharse_Page {
 	@FindBy(xpath = "(//button[@type='submit'])[2]")
 	private WebElement payment;
 
+	@FindBy(xpath = "//a[@class='cheque']")
+	private WebElement pay;
+
 	public Purcharse_Page(WebDriver driver2) {
 		this.driver = driver2;
 
@@ -111,6 +114,10 @@ public class Purcharse_Page {
 
 	public WebElement getPayment() {
 		return payment;
+	}
+
+	public WebElement getPay() {
+		return pay;
 	}
 
 }
